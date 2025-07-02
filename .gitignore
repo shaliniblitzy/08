@@ -1,0 +1,99 @@
+# Node.js Tutorial - Git Ignore Configuration
+# This file prevents version control tracking of generated files, dependencies, and sensitive data
+
+# Dependencies and Package Management
+# Exclude all installed npm packages and modules
+node_modules/
+
+# NPM Package Lock Files  
+# Note: Include package-lock.json in commits for consistency, but exclude if needed for tutorial simplicity
+# package-lock.json
+
+# Runtime and Debug Files
+# NPM debug logs and error logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node.js runtime logs
+*.log
+
+# Environment and Configuration Files
+# Environment variables and sensitive configuration
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS Generated Files
+# macOS system files
+.DS_Store
+.DS_Store?
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux system files
+*~
+
+# IDE and Editor Files
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# IntelliJ IDEA / WebStorm
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+
+# Build and Distribution Files
+# Build output directories
+dist/
+build/
+out/
+
+# Temporary Files and Caches
+# Node.js temporary files
+.tmp/
+tmp/
+
+# NPM cache directory
+.npm
+
+# Coverage and Testing
+# Test coverage reports
+coverage/
+.nyc_output/
+
+# ESLint cache
+.eslintcache
+
+# Optional: Development Tools
+# Nodemon state files
+.nodemonignore
+
+# PM2 process manager logs
+.pm2/
+
+# Tutorial-Specific Exclusions
+# Backup files often created during tutorial development
+*.bak
+*.backup
+*.orig
+
+# Notes and documentation drafts (optional for tutorial development)
+NOTES.md
+TODO.md
